@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.easychitty.R
 
+// need to  change name of fragment
 class MainFragment : Fragment() {
 
     companion object {
