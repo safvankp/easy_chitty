@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.signup.SignUpScreen">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ls_scrip_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rs_scrip_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+<TextView
+    android:id="@+id/back_arrow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_back_arrow"
+    app:layout_constraintStart_toEndOf="@+id/ls_scrip_guideline"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/dp_40"/>
+    <TextView
+        android:id="@+id/main_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/ls_scrip_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/back_arrow"
+        tools:text="@string/create_account"
+        android:textSize="@dimen/sp_24"
+        android:layout_marginTop="@dimen/dp_40"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
